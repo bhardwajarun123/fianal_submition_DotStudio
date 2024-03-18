@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Gotham';
+            src: url('fonts/Gotham.woff2') format('woff2'),
+                url('fonts/Gotham.woff') format('woff');
+        }
+
+        body {
+            font-family: 'Gotham', sans-serif;
+            margin: 0;
+            /* Reset default margin to remove extra space */
+        }
+
+        .main {
+            width: 1440px;
+            height: 936px;
+            padding: 64px 185px;
+            box-sizing: border-box;
+        }
+
+        .main>.container {
+            width: 1070px;
+            height: 808px;
+            margin: 64px auto;
+            gap: 40px;
+        }
+
+        #header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #text {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 58px;
+            letter-spacing: -0.03em;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #text span {
+            margin-left: 10px;
+        }
+
+        /* Rest of your CSS rules */
+
+
+        .main>.container>.subcontainer {
+            width: 1070px;
+            height: 708px;
+            gap: 48px;
+        }
+
+        .main>.container>.subcontainer>.rectangle {
+            width: 1070px;
+            height: 330px;
+            gap: 48px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card {
+            width: 511px;
+            height: 330px;
+            border-radius: 8px;
+            margin-bottom: 48px;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #upper {
+            display: flex;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.box {
+            width: 511px;
+            height: 294px;
+            text-align: center;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.box>.content {
+            width: 425px;
+            height: 147px;
+            top: 91px;
+            left: 43px;
+            gap: 8px;
+            margin-top: 75px;
+            margin-left: 43px;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.box>.content>.b1 {
+            width: 371px;
+            height: 35px;
+            margin-left: 27px;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.box>.content>.b1>.text1 {
+            font-family: Gotham;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: -0.05em;
+            text-align: center;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.box>.content>.b2 {
+            width: 425px;
+            height: 104px;
+            background: #FFFFFF;
+
+            ;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.box>.content>.b2>.text2 {
+            font-family: Gotham;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: -0.05em;
+            text-align: center;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.img {
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            margin: 5px;
+            overflow: hidden;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.img>img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.upper-right-inside-box {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: transparent;
+
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.upper-right-inside-box>.upper-right-inside-subsection {
+            width: 358px;
+            height: 31px;
+            margin-top: 248px;
+            margin-left: 77px;
+            gap: 12px;
+            text-align: center;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.upper-right-inside-box>.upper-right-inside-subsection>.text3 {
+            font-family: Shape;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 31px;
+            letter-spacing: -0.03em;
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.upper-right-inside-box>.upper-right-inside-subsection-bottom {
+            width: 310px;
+            height: 48px;
+            margin-left: 100px;
+            text-align: center;
+            background: #FFFFFF;
+
+        }
+
+        .main>.container>.subcontainer>.rectangle>.card>.upper-right-inside-box>.upper-right-inside-subsection-bottom>.text4 {
+            font-family: Gotham;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: -0.05em;
+            text-align: center;
+        }
+
+
+
+        .main>.container>.subcontainer>.rectangle>.card:hover .text1,
+        .main>.container>.subcontainer>.rectangle>.card:hover .text2,
+        .main>.container>.subcontainer>.rectangle>.card:hover .text3,
+        .main>.container>.subcontainer>.rectangle>.card:hover .text4 {
+            animation: textAnimation 0.5s ease-in-out;
+        }
+
+        @keyframes textAnimation {
+            0% {
+                transform: translateX(-10px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <header id="header">
+                <p id="text">Why Choose <span>Us</span></p>
+            </header>
+
+            <div class="subcontainer" id="upper">
+                <div class="rectangle">
+                    <div class="card" id="c1">
+                        <div class="box">
+                            <div class="content">
+                                <div class="b1">
+                                    <p class="text1">Empower, Explore, Excel</p>
+                                </div>
+                                <div class="b2">
+                                    <p class="text2">Experience innovation in education! Our interactive approach,
+                                        featuring
+                                        audio/visual lectures, group discussions, and projects, nurtures critical
+                                        thinking and creativity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add your other cards and content here -->
+
+                    <div class="card">
+                        <div class="img">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/fb98/69fe/0c4b7871df848d70bfc042d65a7cf9b6?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asWnv8KS-fhxTmbR~kIb4kCxOD2jrRSCOWUd3r-b1~yYUJcMR2~0IgmZJQYL9XbVFi~pe33bt87pXQY8xhMZ2HACgPkD1hXFj2pmTV4tsVMm4T2UqTi2Vl5EaLN0qbFIoIeT-UQY4nHYua4Rk81LJRkQ2SVmyNGOMh7AmU6o7ddc8OwBFturkdNQP7VRMdWUGRyVoBWxP9KiwhVVEigpdca-TuVA9I5DpMrPWs2GEBFVSeqCEzWPS2mA5XPiTV-1RuCl-cRO4xvDomR49xoeRy67HOVIYTPQh6gije~gcw0WOgqBfzIyDkEq7-sHv4wNtPXOHpj1lPpbjuD2zvb4ZA__">
+                        </div>
+                        <div class="upper-right-inside-box">
+                            <div class="upper-right-inside-subsection">
+                                <p class="text3">Voices Echo, Friendships Bloom</p>
+                            </div>
+                            <div class="upper-right-inside-subsection-bottom">
+                                <p class="text4">Right Mix of Curricular & Co-Curricular Activities</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rectangle" id="lower">
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://s3-alpha-sig.figma.com/img/31ef/75cb/3cd5a00b2a5499627e4623e04dd84704?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h9v3QkGVe-QhHHsP8gjd5gKPnHzCIi1qka319ik2mPjJ-YmPAOXKjyorsnxjpid45YK3Y2FLbaRfjsgjqBx0dHdv7IT0lFs3imzVCPXOYx-6LsQBYk3SaRMp9gR8AFmiQk7gST0cPEqGeZ9GbpNTMFrMAgPEG7KCs-yB6YcCDeW6e~WkaS7muBvePiTTep61SojNJUG3gcsmD4QGZszuHk438z91A5czcPQ-88f1MdHdWfctXs19bs7BmxNk287QX1jQGs10CW-3ZDSB4dX0zZcCXuUFTVVy1dXSWfyWy~hgd50OmuBIdjdS3Z9y1vMUc0v44VCE2aREDDJngg--ag__"
+                                alt="Your Image Alt Text">
+                        </div>
+                        <div class="upper-right-inside-box">
+                            <div class="upper-right-inside-subsection">
+                                <p class="text3">Striking the Perfect Balance</p>
+                            </div>
+                            <div class="upper-right-inside-subsection-bottom">
+                                <p class="text4">Right Mix of Curricular & Co-Curricular Activities</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/80b9/12a4/f7cae889d523de7ff084c5905a18c718?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CDKfh6Xm7wNU97E2kn5Ze1jlJmIvOYSHHyWeVspo--a0ydTTjAyr5ZCUGqR1R0m9nF~NtuTu0s4HlVbKEdxDF4abfCwInZcnyvuavaPkq9J1VRzAD2SJvERFx8eeXldC05D7XG4-n1jw~BS~-z03xus955g2Xatf7DVNSdlJMt3v~wP2uFM01qozlVXJKdV4GcR2kmIsKvoK3BhV4GeBOn91jGUXulH7XtGX~4MojGfkToHTrdkDkalJ-oLy6h4H1zEuM0Z~0GIe5xe6IuX6br6eOVPJwFlPZmL1EWjP~XJ9NFeWAQw5EzuNjzIMMjn47wzHqfic54cHPkOMyZ8gkw__">
+                        </div>
+                        <div class="upper-right-inside-box">
+                            <div class="upper-right-inside-subsection">
+                                <p class="text3">Experience Meets Expertise</p>
+                            </div>
+                            <div class="upper-right-inside-subsection-bottom">
+                                <p class="text4">Right Mix of Curricular & Co-Curricular Activities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
